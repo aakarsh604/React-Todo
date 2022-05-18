@@ -1,0 +1,25 @@
+
+
+
+.todoList {
+    /* border: 0.1px  solid black; */
+    max-width: 250px;
+    margin: auto;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.checke {
+    display: flex;
+    align-items: center;
+}
+
+.striked {
+    text-decoration: line-through;
+}
