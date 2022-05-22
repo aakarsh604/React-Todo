@@ -1,5 +1,27 @@
 
+.main{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    overflow-y: scroll;
+}
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(17, 0, 104);
+}
+
+::-webkit-scrollbar-button {
+    background-color: transparent;
+}
 
 .todoList {
     /* border: 0.1px  solid black; */
@@ -8,11 +30,36 @@
 }
 
 .todo {
+    width: 390px;
+    margin-left: -70px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
+    border: 1px solid white;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.804);
+    
+}
+
+.inputmaindiv{
+    /* border : 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputdiv {
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    padding: 0px 25px;
 }
 
 .checke {
@@ -22,4 +69,38 @@
 
 .striked {
     text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.inputbtn {
+    height: 40px;
+    width: 45px;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+.completed {
+        border: none;
+        outline: none;
+        margin-top: 10px;
+        padding: 5px 15px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 17px;
+        cursor: pointer;
+        background-color: rgba(220, 220, 220, 0.5);
+}
+
+.completed:hover {
+    background-color: rgba(220, 220, 220, 0.915);
+}
+
+.checkedinp{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
